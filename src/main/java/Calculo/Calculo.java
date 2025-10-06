@@ -27,7 +27,7 @@ public class Calculo {
     }
 
     private void calculaIMC() {
-        this.setIMC((Double) this.getPeso() / this.getAltura() * this.getAltura());
+        this.setIMC(peso / (altura * altura));
 
     }
 
@@ -47,6 +47,7 @@ public class Calculo {
         } else if (getIMC() >= 40) {
             setSituacao("Obesidade 3");
         }
+        System.out.println(IMC);
 
     }
 

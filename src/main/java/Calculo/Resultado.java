@@ -94,6 +94,7 @@ public class Resultado extends javax.swing.JFrame {
     Calculo a = new Calculo(
     Double.parseDouble(jTaltura.getText()),
     Double.parseDouble(jTapeso.getText())
+            
      );
     
     ResultadoIMC r = new ResultadoIMC(a);

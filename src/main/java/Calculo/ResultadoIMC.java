@@ -21,6 +21,7 @@ public class ResultadoIMC extends javax.swing.JFrame {
         initComponents();
         jLIMC.setText(String.valueOf(IMC.getIMC()));
         jLsituacao.setText(String.valueOf(IMC.getSituacao()));
+        
     }
     /**
      * This method is called from within the constructor to initialize the form.
@@ -47,16 +48,16 @@ public class ResultadoIMC extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(165, 165, 165)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLsituacao)
-                    .addComponent(jLIMC))
-                .addContainerGap(198, Short.MAX_VALUE))
+                    .addComponent(jLIMC, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLsituacao))
+                .addContainerGap(136, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(59, 59, 59)
-                .addComponent(jLIMC)
-                .addGap(18, 18, 18)
+                .addComponent(jLIMC, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLsituacao)
                 .addContainerGap(191, Short.MAX_VALUE))
         );
